@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<article class="well">
+    <div class="title">
+        <i class="fa fa-desktop fa-fw"></i>Configuração Mínima:
+    </div>
+
+    <h4>Sistema desenvolvido para resolução mínima de 1024x768 para desktops e 320x240 para plataformas mobile</h4>
+    <br />
+    <blockquote><h4>Navegadores suportados:</h4></blockquote>
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <img src="@Url.Content("~/Content/images/internet-explorer.png")" alt="Internet Explorer" />
+            <br />
+            <h4>Internet Explorer 9 ou Superior</h4>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="@Url.Content("~/Content/images/chrome.png")" alt="Chrome" />
+            <br />
+            <h4>Chrome 31 ou Superior</h4>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="@Url.Content("~/Content/images/firefox.png")" alt="Firefox" />
+            <br />
+            <h4>Firefox 14 ou Superior</h4>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="@Url.Content("~/Content/images/safari.png")" alt="Safari" />
+            <br />
+            <h4>Safari</h4>
+        </div>
+    </div>
+    <br />
+    <h4>Problemas de visualização IE (Internet Explorer):</h4>
+    <p>
+        <b>Caso você esteja utilizando IE e o layout da pagina esteja sobreposto ou não esteja conseguindo ler os textos. Observe as seguintes configurações:</b>
+        <ul>
+            <li>Com o site aberto pressione F12, verifique o Modo do Navegador e o Modo de documento padrão, as duas opções devem estar como Internet Explorer 9.0 ou superior.</li>
+        </ul>
+    </p>
+</article>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>@ViewBag.Title | Workflow</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top">
+        @Html.Partial("_Menu")
+    </header>
+
+    <div>@Html.Hidden("UrlPath", Url.Content("~/"))</div>
+    @Html.Partial("_Message")
+
+    <section class="container body-content">
+        @RenderBody()
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year - Farias Solutions - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", false)
+    @Html.Partial("_ShowMessage")
+</body>
+</html>

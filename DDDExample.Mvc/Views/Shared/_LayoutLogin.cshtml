@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Login | Workflow</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/login.css" rel="stylesheet" type="text/css">
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @Html.Partial("_Message")
+
+    <section>
+        @RenderBody()
+    </section>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", false)
+    @Html.Partial("_ShowMessage")
+</body>
+</html>

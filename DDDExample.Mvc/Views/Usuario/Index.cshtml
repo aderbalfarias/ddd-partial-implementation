@@ -1,0 +1,82 @@
+﻿@using DDDExample.Mvc.Helpers
+@model IEnumerable<DDDExample.Mvc.Models.UsuarioModel>
+@{
+    ViewBag.Title = "Usuários";
+}
+
+<div class="well">
+    <div class="title">
+        <div><i class="fa fa-table fa-fw"></i>Lista de Usuários </div>
+    </div>
+
+    <div class="table-responsive table-responsive-specific">
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Perfil.Descricao)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Login)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UltimoAcesso)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataCadastro)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ativo)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Perfil.Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Login)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UltimoAcesso)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataCadastro)
+                    </td>
+                    <td>
+                        @Html.HiddenFor(modelItem => item.Ativo)
+                        @(item.Ativo ? "Sim" : "Não")
+                    </td>
+                    <td class="text-center acao">
+                        <a href="@Url.Action("Edit", new { id = item.UsuarioId })" title="Editar"><i class="fa fa-lg fa-edit"></i></a> |
+                        <a href="#" title="Remover" onclick="ConfirmDelete('@Url.Action("Delete", new { id = item.UsuarioId })', '@item.Nome')"><i class="fa fa-lg fa-remove"></i></a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        @Html.Pagination(@Url.Action("Index", "Usuario"), (int)ViewBag.PaginaAtual, (int)ViewBag.QtdePaginas)
+    }
+
+    <div>
+        @Html.ActionLink("Adicionar Novo", "Create", null, new { @class = "btn btn-default btn-specific" })
+    </div>
+</div>
+

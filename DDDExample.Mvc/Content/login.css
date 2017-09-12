@@ -1,0 +1,43 @@
+﻿body {
+    background-color: #ffffff;
+}
+
+.page-login {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    background-color: inherit;
+    background-color: #f7f7f7;
+    border: #037a4f 1px groove;
+    position: absolute; 
+    width: 440px; 
+    margin-left:-220px; 
+    height: 450px; 
+    margin-top:-225px; 
+    top: 40%; 
+    left:50%;
+    display: inline-block;
+	font-weight: 400;
+    color: #333333;
+}
+
+@media (max-width: 450px) {
+    .page-login {
+        padding-top: 0;
+        width: 300px; 
+        margin-left:-150px; 
+    }
+}
+
+.profile-img {
+    height: 128px;
+	background: url('/Content/images/LogoLogin.png') no-repeat center;
+}
+
+.display-inline {
+    display: inline-block;
+}
+
+.page-login hr {
+    border-color: #037a4f;
+}
