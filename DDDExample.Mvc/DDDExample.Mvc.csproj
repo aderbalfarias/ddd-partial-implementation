@@ -258,10 +258,7 @@
     <Content Include="Views\Usuario\Edit.cshtml" />
     <Content Include="Views\Usuario\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\less\" />
-    <Folder Include="Content\scss\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -286,6 +283,9 @@
       <Project>{35aab817-15ec-4b99-9ac0-575e8251cbc9}</Project>
       <Name>DDDExample.Infrastructure.CrossCutting.IoC</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
