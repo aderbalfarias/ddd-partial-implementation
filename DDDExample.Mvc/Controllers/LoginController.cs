@@ -109,7 +109,7 @@ namespace DDDExample.Mvc.Controllers
                     {
                         From = "teste@teste.com.br",
                         To = new List<string> { model.Email },
-                        Subject = "Workflow - Recuperação de Senha",
+                        Subject = "Recuperação de Senha",
                         Body =
                             $"Caro(a) {usuario.Nome},<br><br> Conforme solicitado segue o dados para recuperação de senha, " +
                             $"<br> Login: {usuario.Login}<br> Código de Recuperação: {usuario.CodigoRecover}"
