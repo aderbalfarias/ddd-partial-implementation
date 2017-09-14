@@ -1,12 +1,12 @@
 ﻿@using DDDExample.Mvc.Helpers
 @model IEnumerable<DDDExample.Mvc.Models.UsuarioModel>
 @{
-    ViewBag.Title = "Usuários";
+    ViewBag.Title = "Users";
 }
 
 <div class="well">
     <div class="title">
-        <div><i class="fa fa-table fa-fw"></i>Lista de Usuários </div>
+        <div><i class="fa fa-table fa-fw"></i>List of Users </div>
     </div>
 
     <div class="table-responsive table-responsive-specific">
@@ -40,7 +40,7 @@
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Perfil.Descricao)
+                        Access Profile
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Nome)
@@ -59,11 +59,11 @@
                     </td>
                     <td>
                         @Html.HiddenFor(modelItem => item.Ativo)
-                        @(item.Ativo ? "Sim" : "Não")
+                        @(item.Ativo ? "Yes" : "No")
                     </td>
                     <td class="text-center acao">
-                        <a href="@Url.Action("Edit", new { id = item.UsuarioId })" title="Editar"><i class="fa fa-lg fa-edit"></i></a> |
-                        <a href="#" title="Remover" onclick="ConfirmDelete('@Url.Action("Delete", new { id = item.UsuarioId })', '@item.Nome')"><i class="fa fa-lg fa-remove"></i></a>
+                        <a href="@Url.Action("Edit", new { id = item.UsuarioId })" title="Edit"><i class="fa fa-lg fa-edit"></i></a> |
+                        <a href="#" title="Delete" onclick="ConfirmDelete('@Url.Action("Delete", new { id = item.UsuarioId })', '@item.Nome')"><i class="fa fa-lg fa-remove"></i></a>
                     </td>
                 </tr>
             }
@@ -76,7 +76,7 @@
     }
 
     <div>
-        @Html.ActionLink("Adicionar Novo", "Create", null, new { @class = "btn btn-default btn-specific" })
+        @Html.ActionLink("Add New", "Create", null, new { @class = "btn btn-default btn-specific" })
     </div>
 </div>
 

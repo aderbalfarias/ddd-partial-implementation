@@ -761,7 +761,7 @@
   var locales = {
     br : {
       OK      : "OK",
-      CANCEL  : "Cancelar",
+      CANCEL  : "Cancel",
       CONFIRM : "Sim"
     },
     cs : {
@@ -791,7 +791,7 @@
     },
     es : {
       OK      : "OK",
-      CANCEL  : "Cancelar",
+      CANCEL  : "Cancel",
       CONFIRM : "Aceptar"
     },
     et : {
@@ -856,7 +856,7 @@
     },
     pt : {
       OK      : "OK",
-      CANCEL  : "Cancelar",
+      CANCEL  : "Cancel",
       CONFIRM : "Confirmar"
     },
     ru : {

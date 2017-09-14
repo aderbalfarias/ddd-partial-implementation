@@ -7,7 +7,7 @@
 {
     @Html.AntiForgeryToken()
 
-    <legend><i class="fa fa-user fa-fw"></i>Editar Usuário</legend>
+    <legend><i class="fa fa-user fa-fw"></i>Edit User</legend>
 
     <div class="form-horizontal">
 
@@ -20,7 +20,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Nome, new { @class = "control-label col-md-2" })
             <div class="col-md-6">
-                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", @placeholder = "Informe o nome" } })
+                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", @placeholder = "Type your name" } })
                 @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -36,7 +36,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-2" })
             <div class="col-md-6">
-                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Informe o email" } })
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Type your email" } })
                 @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -44,7 +44,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Login, new { @class = "control-label col-md-2" })
             <div class="col-md-6">
-                @Html.EditorFor(model => model.Login, new { htmlAttributes = new { @class = "form-control", @placeholder = "Informe o login" } })
+                @Html.EditorFor(model => model.Login, new { htmlAttributes = new { @class = "form-control", @placeholder = "Type your user" } })
                 @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -63,8 +63,8 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Salvar" class="btn btn-default btn-specific" />
-                @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn btn-default btn-specific" })
+                <input type="submit" value="Save" class="btn btn-default btn-specific" />
+                @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-default btn-specific" })
             </div>
         </div>
     </div>
