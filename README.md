@@ -17,7 +17,7 @@ For this project to work on your machine, you have to replace the line below.
 ```xml
 <add name="Connection" connectionString="Data Source=yourserver; initial catalog=DbExample;user id=youruser;password=yourpassword;" providerName="System.Data.SqlClient" />
 ```
-You have to replace these words:
-yourserver: server name where the application will create the database
-youruser: your username to access the server
-yourpassword: your password to access the server
+You have to replace these words:<br />
+yourserver: server name where the application will create the database<br />
+youruser: your username to access the server<br />
+yourpassword: your password to access the server<br />
