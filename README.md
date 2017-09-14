@@ -21,3 +21,5 @@ You have to replace these words:<br />
 **yourserver:** server name where the application will create the database<br />
 **youruser:** your username to access the server<br />
 **yourpassword:** your password to access the server<br />
+
+The application contains an initialization file that will create the default **user admin** with the **password 123456**
