@@ -12,7 +12,7 @@ This repository contains a basic example to implement the methodology of project
 
 ## Configuration
 
-For this project to work on your machine, you have to replace the line below.
+For this project to work on your machine, you have to replace the line below on file Web.config.
 
 ```xml
 <add name="Connection" connectionString="Data Source=yourserver; initial catalog=DbExample;user id=youruser;password=yourpassword;" providerName="System.Data.SqlClient" />
@@ -22,4 +22,16 @@ You have to replace these words:<br />
 **youruser:** your username to access the server<br />
 **yourpassword:** your password to access the server<br />
 
-The application contains an initialization file that will create the default **user admin** with the **password 123456**
+The application contains an initialization file that will create the default user.<br />
+**user: admin**<br />
+**password: 123456**<br />
+
+If you want, you can configure SMTP server to send email on file Web.config as well in these keys.
+
+```xml
+<add key="SMTPServer" value="Server" />
+<add key="SMTPPort" value="25" />
+<add key="SMTPUser" value="user" />
+<add key="SMTPPassword" value="password" />
+<add key="SMTPDomain" value="domain" />
+```
