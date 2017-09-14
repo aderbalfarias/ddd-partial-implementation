@@ -9,3 +9,7 @@ This repository contains a basic example to implement the methodology of project
 - Ninject as container of IoC
 - FluentApi
 - AutoMapper
+
+```xml
+<add name="Connection" connectionString="Data Source=yourserver; initial catalog=DBTeste;user id=youruser;password=yourpassword;" providerName="System.Data.SqlClient" />
+```
