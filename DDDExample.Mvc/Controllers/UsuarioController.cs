@@ -118,7 +118,7 @@ namespace DDDExample.Mvc.Controllers
                         {
                             From = "teste@teste.com.br",
                             To = new List<string> { model.Email },
-                            Subject = "Workflow - Cadastramento no Portal",
+                            Subject = "DDDExample - Cadastramento no Portal",
                             Body =
                                 $"Caro(a) {model.Nome},<br><br> Foi realizado cadastramento no portal para seu usuário, conforme informações a seguir, " +
                                 $"<br> Login: {model.Login}<br> Senha: {model.Senha}"

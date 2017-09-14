@@ -20,9 +20,9 @@ namespace DDDExample.Infrastructure.Data.EntityConfig
                         {
                             new Usuario
                             {
-                                Nome = "Aderbal Farias",
-                                Email = "teste@teste.com.br",
-                                Login = "aderbal.farias",
+                                Nome = "Adm Teste",
+                                Email = "adm@teste.com",
+                                Login = "admin",
                                 Senha = "T8BDdQokQd79jjXS4j6E8A==",
                                 DataCadastro = DateTime.Now,
                                 Ativo = true
@@ -39,7 +39,7 @@ namespace DDDExample.Infrastructure.Data.EntityConfig
                             {
                                 Nome = "Teste",
                                 Email = "teste@teste.com",
-                                Login = "teste.teste",
+                                Login = "teste",
                                 Senha = "T8BDdQokQd79jjXS4j6E8A==",
                                 DataCadastro = DateTime.Now,
                                 Ativo = true
