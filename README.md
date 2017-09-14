@@ -1,3 +1,4 @@
 # DDDExample
 
-Project to basic template of Domain Driven Design
+Basic example to implement the methodology of project Domain Driven Design (DDD)
+
