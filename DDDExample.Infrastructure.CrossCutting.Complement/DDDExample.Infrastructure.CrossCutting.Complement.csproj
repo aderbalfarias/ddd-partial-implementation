@@ -7,8 +7,8 @@
     <ProjectGuid>{EB57F199-2FE1-4149-8079-9686C0074AF7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Framework.Workflow.Infrastructure.CrossCutting.Complement</RootNamespace>
-    <AssemblyName>Framework.Workflow.Infrastructure.CrossCutting.Complement</AssemblyName>
+    <RootNamespace>DDDExample.Infrastructure.CrossCutting.Complement</RootNamespace>
+    <AssemblyName>DDDExample.Infrastructure.CrossCutting.Complement</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
