@@ -14,11 +14,12 @@ This repository contains a basic example to implement the methodology of project
 
 ## Configuration
 
-For this project to work on your machine, you have to replace the line below on file Web.config.
+For this project to work on your machine, you have to replace the line below on file Web.config at project DDDExample.Mvc.
 
 ```xml
 <add name="Connection" connectionString="Data Source=yourserver; initial catalog=DbExample;user id=youruser;password=yourpassword;" providerName="System.Data.SqlClient" />
 ```
+
 You have to replace these words:<br />
 **yourserver:** server name where the application will create the database<br />
 **youruser:** your username to access the server<br />
