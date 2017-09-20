@@ -1,13 +1,14 @@
 # DDDExample
 
-This repository contains a basic example to implement the methodology of project Domain Driven Design (DDD) with some Technologies like:
+This repository contains a basic example to implement some concepts the methodology of project Domain Driven Design (DDD) with some Technologies like:
 - C#
 - ASP.NET MVC 5
 - Entity Framework 6
 - CodeFirst
-- Dependency Injection (IoC)
+- Dependency Injection (DI) 
+- Inversion of control (IoC)
 - Application in layers
-- Ninject as container of IoC
+- Ninject as container of DI
 - FluentApi
 - AutoMapper
 - Linq Lambda Expressions
