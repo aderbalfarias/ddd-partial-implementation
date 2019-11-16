@@ -1,4 +1,4 @@
-# DDDExample
+# DDD Partial Implementation
 
 This repository contains a basic example to implement some concepts the methodology of project Domain Driven Design (DDD) with some Technologies like:
 - C#
